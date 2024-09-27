@@ -276,3 +276,50 @@ section {
     }
   }
 }
+
+
+body {
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  /* Tamanhos grandes (desktop) */
+  header {
+    display: grid;
+    grid-template-columns: 1fr 600px;
+  }
+  
+  /* Responsividade para tablets e smartphones */
+  @media (max-width: 768px) {
+    header {
+      grid-template-columns: 1fr;
+    }
+  
+    .list .item .content h2 {
+      font-size: 3em;
+    }
+  
+    .list .item .car-img img {
+      width: 90%;
+      transform: rotate(0deg);
+    }
+  
+    .list {
+      width: 90vw;
+    }
+  
+    .arrows {
+      width: 90vw;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .list .item .content h2 {
+      font-size: 2em;
+    }
+  
+    .list .item .car-img img {
+      width: 80%;
+    }
+  }
+  
